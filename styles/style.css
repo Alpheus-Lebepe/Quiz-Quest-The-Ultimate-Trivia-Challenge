@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../image/bg_img.jpg') no-repeat fixed;
+    background-size: cover;
+    background-color: darkblue;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+}
+
+.dashboard {
+    text-align: center;
+    padding: 40px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    display: block;
+    padding: 50px 100px;
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+button {
+    display: block;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.card:hover,
+button:hover {
+    border: 2px solid rgba(0, 110, 200, 1);
+    background: rgba(0, 110, 200, 0.3);
+    box-shadow: 0 0 10px rgba(0, 110, 200, 0.5);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+select:hover {
+    background-color: black;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid rgba(0, 110, 200, 1);
+    box-shadow: 0 0 10px rgba(0, 110, 200, 0.7);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: rgba(0, 110, 200, 0.7);
+    color: #fff;
+}
+
+.delete-btn {
+    background: #ff4c4c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #ff1a1a;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.create_question,
+.goback-btn {
+    background: seagreen;
+}
+
+.start-btn {
+    background: dodgerblue;
+}
+
+/* Glassy Checkboxes & Radios  */
+.checkbox-glass {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* ONLY affect radio/checkbox inside .checkbox-glass */
+.checkbox-glass input[type="checkbox"],
+.checkbox-glass input[type="radio"] {
+    display: none;
+}
+
+.checkbox-glass:hover {
+    border: 2px solid rgba(0, 110, 200, 1);
+    box-shadow: 0 0 10px rgba(0, 110, 200, 0.5);
+}
+
+/* Checked state */
+.checkbox-glass:has(input:checked) {
+    border: 2px solid rgba(0, 110, 200, 1);
+    background: rgba(0, 110, 200, 0.5);
+}
+
+.goback {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table-container {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
